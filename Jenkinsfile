@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     // Update ECS service
-                    sh "aws ecs update-service --cluster ${params.ECS_CLUSTER_NAME} --service ${params.ECS_SERVICE_NAME} --desired-count ${params.DESIRED_COUNT} }"
+                    sh "aws ecs update-service --cluster ${params.ECS_CLUSTER_NAME} --service ${params.ECS_SERVICE_NAME} --desired-count ${params.DESIRED_COUNT}"
                 }
             }
         }
